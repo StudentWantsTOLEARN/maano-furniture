@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  html, body {
+    min-height: 100%;
+    min-height: -webkit-fill-available;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-woody-50 text-woody-800 antialiased selection:bg-woody-200;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+/* iOS Cupertino Glassmorphism Effects */
+.ios-glass {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Custom Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8BCAB;
+  border-radius: 9999px;
+}
