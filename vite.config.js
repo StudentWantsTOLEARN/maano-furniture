@@ -7,13 +7,13 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
+      includeAssets: ['MF.png'],
       manifest: {
         name: 'Maano Furniture',
         short_name: 'Maano',
         description: 'Handcrafted Organic Living & Furniture Shop',
-        theme_color: '#ffffff',
-        background_color: '#ffffff',
+        theme_color: '#3D2314',
+        background_color: '#F9F6F0',
         display: 'standalone',
         icons: [
           {
